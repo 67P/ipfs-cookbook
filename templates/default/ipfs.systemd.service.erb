@@ -1,0 +1,11 @@
+[Unit]
+Description=Start ipfs
+
+[Service]
+ExecStart=/usr/local/bin/ipfs daemon
+User=ipfs
+Group=ipfs
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

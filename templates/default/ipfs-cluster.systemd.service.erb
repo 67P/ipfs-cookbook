@@ -1,0 +1,11 @@
+[Unit]
+Description=Start ipfs-cluster
+
+[Service]
+ExecStart=/usr/local/bin/ipfs-cluster-service daemon
+User=ipfs
+Group=ipfs
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
