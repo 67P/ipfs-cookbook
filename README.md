@@ -12,8 +12,8 @@ It currently only supports 64bit platforms
 ### Chef
 
 - Chef 12.5 or later (we are providing a
-  [https://docs.chef.io/custom_resources.html](Custom Resource) to configure
-  IPFS
+  [Custom Resource](https://docs.chef.io/custom_resources.html) to configure
+  IPFS)
 
 ### Cookbook dependencies
 
