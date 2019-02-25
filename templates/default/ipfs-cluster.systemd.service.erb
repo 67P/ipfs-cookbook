@@ -2,7 +2,7 @@
 Description=Start ipfs-cluster
 
 [Service]
-ExecStart=/usr/local/bin/ipfs-cluster-service daemon
+ExecStart=/usr/local/bin/ipfs-cluster-service daemon --upgrade
 User=ipfs
 Group=ipfs
 Restart=always
