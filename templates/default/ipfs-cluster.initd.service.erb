@@ -15,7 +15,7 @@ PATH=/sbin:/usr/sbin:/bin:/usr/bin:/usr/local/bin
 DESC="ipfs-cluster daemon"
 NAME=ipfs-cluster
 DAEMON=/usr/local/bin/ipfs-cluster-service
-DAEMON_ARGS="daemon"
+DAEMON_ARGS="daemon --upgrade"
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
 
