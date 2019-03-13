@@ -33,5 +33,6 @@ user 'ipfs' do
   uid 4737
   gid 4737
   home '/home/ipfs'
+  shell '/bin/bash'
   manage_home true
 end
