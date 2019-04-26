@@ -6,6 +6,8 @@ ExecStart=/usr/local/bin/ipfs daemon --migrate
 User=ipfs
 Group=ipfs
 Restart=always
+# Raise the ulimit (max number of open files)
+LimitNOFILE=64000
 
 [Install]
 WantedBy=multi-user.target
