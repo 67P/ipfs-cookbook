@@ -99,10 +99,10 @@ end
 # Number of connections that, when exceeded, will trigger a connection GC
 # operation
 ipfs_config 'Swarm.ConnMgr.HighWater' do
-  value 10
+  value '10'
 end
 
 # Minimum number of connections to maintain
 ipfs_config 'Swarm.ConnMgr.LowWater' do
-  value 1
+  value '1'
 end
