@@ -2,12 +2,14 @@
 Description=Start ipfs
 
 [Service]
-ExecStart=/usr/local/bin/ipfs daemon --migrate
+ExecStart=/usr/local/bin/ipfs daemon --migrate --routing=dhtclient
 User=ipfs
 Group=ipfs
 Restart=always
 # Raise the ulimit (max number of open files)
 LimitNOFILE=64000
+# Limit the memory usage to 256MB
+MemoryMax=256M
 
 [Install]
 WantedBy=multi-user.target

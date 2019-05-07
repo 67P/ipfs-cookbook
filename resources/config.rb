@@ -2,7 +2,7 @@ require 'json'
 require 'mixlib/shellout'
 
 property :key, String, name_property: true
-property :value, [String, Hash, Array, TrueClass, FalseClass], required: true
+property :value, [String, Hash, Array, TrueClass, FalseClass, Integer], required: true
 
 action :create do
   include_recipe 'ipfs'
