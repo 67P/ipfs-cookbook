@@ -41,14 +41,14 @@ describe 'IPFS' do
   "/ip4/203.0.113.0/ipcidr/24",
   "/ip4/240.0.0.0/ipcidr/4"
 ]
-EOF
+                 EOF
 
   {
-    "Swarm.AddrFilters" => addr_filters.rstrip,
-    "Swarm.DisableBandwidthMetrics" => true,
-    "Swarm.DisableRelay" => true,
-    "Swarm.ConnMgr.HighWater" => 10,
-    "Swarm.ConnMgr.LowWater" => 1,
+    'Swarm.AddrFilters' => addr_filters.rstrip,
+    'Swarm.DisableBandwidthMetrics' => true,
+    'Swarm.DisableRelay' => true,
+    'Swarm.ConnMgr.HighWater' => 10,
+    'Swarm.ConnMgr.LowWater' => 1,
   }.each do |k, v|
     describe command("IPFS_PATH=/home/ipfs/.ipfs ipfs config '#{k}'") do
       let(:sudo_options) { '-u ipfs -i' }

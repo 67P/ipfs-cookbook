@@ -6,7 +6,7 @@ node.default['ipfs']['cluster']['version'] = '0.4.0'
 node.default['ipfs']['config'] = {
   # Do not contact local network addresses. This will stop platforms like Hetzner
   # to block your server (https://github.com/ipfs/go-ipfs/issues/1226)
-  "Swarm.AddrFilters" => ['/ip4/10.0.0.0/ipcidr/8',
+  'Swarm.AddrFilters' => ['/ip4/10.0.0.0/ipcidr/8',
                           '/ip4/100.64.0.0/ipcidr/10',
                           '/ip4/169.254.0.0/ipcidr/16',
                           '/ip4/172.16.0.0/ipcidr/12',
@@ -24,12 +24,12 @@ node.default['ipfs']['config'] = {
   # Do not keep track of bandwidth metrics. Disabling bandwidth metrics can
   # lead to a slight performance improvement, as well as a reduction in memory
   # usage.
-  "Swarm.DisableBandwidthMetrics" => true,
+  'Swarm.DisableBandwidthMetrics' => true,
   # Disable the p2p-circuit relay transport
-  "Swarm.DisableRelay" => true,
+  'Swarm.DisableRelay' => true,
   # Number of connections that, when exceeded, will trigger a connection GC
   # operation
-  "Swarm.ConnMgr.HighWater" => 10,
+  'Swarm.ConnMgr.HighWater' => 10,
   # Minimum number of connections to maintain
-  "Swarm.ConnMgr.LowWater" => 1
+  'Swarm.ConnMgr.LowWater' => 1,
 }
