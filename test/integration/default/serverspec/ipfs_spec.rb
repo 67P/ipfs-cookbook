@@ -41,7 +41,7 @@ describe 'IPFS' do
   "/ip4/203.0.113.0/ipcidr/24",
   "/ip4/240.0.0.0/ipcidr/4"
 ]
-                 EOF
+  EOF
 
   {
     'Swarm.AddrFilters' => addr_filters.rstrip,
