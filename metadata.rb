@@ -4,7 +4,7 @@ maintainer_email 'mail@kosmos.org'
 license          'MIT'
 description      'Installs/Configures ipfs'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.1.3'
+version          '0.2.0'
 
 supports %w(ubuntu debian)
 

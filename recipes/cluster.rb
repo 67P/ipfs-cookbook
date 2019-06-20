@@ -30,11 +30,13 @@ version = node['ipfs']['cluster']['version']
 
 ark 'ipfs-cluster-service' do
   url "https://dist.ipfs.io/ipfs-cluster-service/v#{version}/ipfs-cluster-service_v#{version}_linux-amd64.tar.gz"
+  checksum node['ipfs']['cluster']['service']['checksum']
   has_binaries ['ipfs-cluster-service']
 end
 
 ark 'ipfs-cluster-ctl' do
   url "https://dist.ipfs.io/ipfs-cluster-ctl/v#{version}/ipfs-cluster-ctl_v#{version}_linux-amd64.tar.gz"
+  checksum node['ipfs']['cluster']['ctl']['checksum']
   has_binaries ['ipfs-cluster-ctl']
 end
 
