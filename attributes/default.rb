@@ -2,6 +2,8 @@ node.default['ipfs']['version'] = '0.4.17'
 node.default['ipfs']['checksum'] = '1bb1050ebe74f9042ac721eb1b71f92e1b0e78e54c59dadfde13080facb2901c'
 
 node.default['ipfs']['cluster']['version'] = '0.4.0'
+node.default['ipfs']['cluster']['service']['checksum'] = 'a168e9d3544f53f3d734098533d606b88417f6319bc8f83b1af7ef1328ed246a'
+node.default['ipfs']['cluster']['ctl']['checksum'] = 'c82ba76b21a6fc42c8c635962a356c51fe6d4d0fbac2a77bfdd159cbe6a56f49'
 
 node.default['ipfs']['config'] = {
   # Do not contact local network addresses. This will stop platforms like Hetzner
