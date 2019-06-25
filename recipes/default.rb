@@ -79,30 +79,8 @@ else
   end
 end
 
-# Configure ipfs to not contact local network addresses
-ipfs_config 'Swarm.AddrFilters' do
-  value node['ipfs']['config']['swarm']['addr_filter']
-end
-
-# Do not keep track of bandwidth metrics. Disabling bandwidth metrics can
-# lead to a slight performance improvement, as well as a reduction in memory
-# usage.
-ipfs_config 'Swarm.DisableBandwidthMetrics' do
-  value true
-end
-
-# Disable the p2p-circuit relay transport
-ipfs_config 'Swarm.DisableRelay' do
-  value true
-end
-
-# Number of connections that, when exceeded, will trigger a connection GC
-# operation
-ipfs_config 'Swarm.ConnMgr.HighWater' do
-  value 10
-end
-
-# Minimum number of connections to maintain
-ipfs_config 'Swarm.ConnMgr.LowWater' do
-  value 1
+node['ipfs']['config'].each do |k, v|
+  ipfs_config k do
+    value v
+  end
 end
