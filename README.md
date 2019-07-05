@@ -64,7 +64,7 @@ kitchen verify # Run the integration tests for Ubuntu 16.04, 18.06 and Debian 9
 
 ## License and Authors
 
-Authors: Kosmos Developers mail@kosmos.org
+Authors: Kosmos Developers mail@kosmos.org  
 Copyright: 2018-2019, [Kosmos Developers](https://kredits.kosmos.org/)
 
 ```
