@@ -1,23 +1,23 @@
-# ipfs Cookbook
+# IPFS Cookbook
 
-This cookbook installs ipfs and starts it as a daemon
+This cookbook installs go-ipfs and starts it as a daemon
 
 ## Requirements
 
 ### Platforms
 
-This cookbook is tested on Ubuntu 16.06, 14.04 and Debian 8 using Test Kitchen.
+This cookbook is tested on Ubuntu 18.06, 16.04 and Debian 9 using Test Kitchen.
 It currently only supports 64bit platforms
 
 ### Chef
 
-- Chef 12.5 or later (we are providing a
+- Chef 12.5 or later (the cookbook provides a
   [Custom Resource](https://docs.chef.io/custom_resources.html) to configure
-  IPFS)
+  go-ipfs)
 
 ### Cookbook dependencies
 
-- `ark` to download and uncompress the Go IPFS package
+- `ark` to download and uncompress the go-ipfs package
 
 ## Usage
 
@@ -36,7 +36,7 @@ Just include `ipfs` in your node's `run_list`:
 
 ## Attributes
 
-- `node.['ipfs']['version']` - the Go IPFS version to download from the official
+- `node['ipfs']['version']` - the go-ipfs version to download from the official
 site (64bit)
 - `node['ipfs']['checksum']` - the SHA256 checksum for the package
 - `node['ipfs']['config']` - a hash of config options
