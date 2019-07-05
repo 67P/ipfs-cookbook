@@ -26,6 +26,6 @@ node.default['ipfs']['config'] = {
 
   # Set up CORS headers
   'API.HTTPHeaders.Access-Control-Allow-Credentials' => ['true'],
-  'API.HTTPHeaders.Access-Control-Allow-Methods' => ['PUT', 'GET', 'POST'],
+  'API.HTTPHeaders.Access-Control-Allow-Methods' => %w(PUT GET POST),
   'API.HTTPHeaders.Access-Control-Allow-Origin' => ['*'],
 }
