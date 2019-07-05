@@ -39,9 +39,7 @@ Just include `ipfs` in your node's `run_list`:
 - `node.['ipfs']['version']` - the Go IPFS version to download from the official
 site (64bit)
 - `node['ipfs']['checksum']` - the SHA256 checksum for the package
-- `node['ipfs']['config']['swarm']['addr_filter']` - the network ranges to not
-connect to. This will stop platforms like Hetzner to block your server
-(https://github.com/ipfs/go-ipfs/issues/1226)
+- `node['ipfs']['config']` - a hash of config options
 
 ## Resources
 
@@ -67,7 +65,7 @@ kitchen verify # Run the integration tests for Ubuntu 16.04, 18.06 and Debian 9
 ## License and Authors
 
 Authors: Kosmos Developers mail@kosmos.org
-Copyright: 2018, [Kosmos Developers](https://kredits.kosmos.org/)
+Copyright: 2018-2019, [Kosmos Developers](https://kredits.kosmos.org/)
 
 ```
 Unless otherwise noted, all files are released under the MIT license, possible
