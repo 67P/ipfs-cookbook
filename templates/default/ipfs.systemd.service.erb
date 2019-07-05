@@ -7,9 +7,9 @@ User=ipfs
 Group=ipfs
 Restart=always
 # Raise the ulimit (max number of open files)
-LimitNOFILE=64000
-# Limit the memory usage to 256MB
-MemoryMax=256M
+LimitNOFILE=<%= node['ipfs']['ulimit'] %>
+# Limit the memory usage
+MemoryMax=<%= node['ipfs']['memory_max'] %>
 
 [Install]
 WantedBy=multi-user.target
