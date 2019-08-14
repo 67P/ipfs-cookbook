@@ -29,8 +29,3 @@ suites:
     run_list:
       - recipe[ipfs::default]
     attributes:
-  - name: cluster
-    run_list:
-      - recipe[ipfs::cluster]
-      - recipe[ipfs::cluster_service]
-    attributes:
