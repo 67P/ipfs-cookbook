@@ -45,10 +45,7 @@ describe 'IPFS' do
 
   {
     'Swarm.AddrFilters' => addr_filters.rstrip,
-    'Swarm.DisableBandwidthMetrics' => true,
-    'Swarm.DisableRelay' => true,
-    'Swarm.ConnMgr.HighWater' => 10,
-    'Swarm.ConnMgr.LowWater' => 1,
+    'Gateway.Writable' => true,
   }.each do |k, v|
     describe command("IPFS_PATH=/home/ipfs/.ipfs ipfs config '#{k}'") do
       let(:sudo_options) { '-u ipfs -i' }

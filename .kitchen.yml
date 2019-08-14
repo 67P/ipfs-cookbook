@@ -6,17 +6,14 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-16.04
   - name: ubuntu-18.04
   - name: debian-9
+
+verifier:
+  chef_license: accept
 
 suites:
   - name: default
     run_list:
       - recipe[ipfs::default]
-    attributes:
-  - name: cluster
-    run_list:
-      - recipe[ipfs::cluster]
-      - recipe[ipfs::cluster_service]
     attributes:

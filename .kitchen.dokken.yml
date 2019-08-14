@@ -13,12 +13,10 @@ provisioner:
 
 verifier:
   name: inspec
+  root_path: '/opt/verifier' # Needed for the specs to be detected in Docker
+  chef_license: accept
 
 platforms:
-  - name: ubuntu-16.04
-    driver:
-      image: dokken/ubuntu-16.04
-      pid_one_command: /bin/systemd
   - name: ubuntu-18.04
     driver:
       image: dokken/ubuntu-18.04
@@ -32,9 +30,4 @@ suites:
   - name: default
     run_list:
       - recipe[ipfs::default]
-    attributes:
-  - name: cluster
-    run_list:
-      - recipe[ipfs::cluster]
-      - recipe[ipfs::cluster_service]
     attributes:
