@@ -13,6 +13,7 @@ provisioner:
 
 verifier:
   name: inspec
+  root_path: '/opt/verifier' # Needed for the specs to be detected in Docker
   chef_license: accept
 
 platforms:
