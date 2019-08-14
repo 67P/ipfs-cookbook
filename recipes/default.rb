@@ -32,6 +32,7 @@ ark 'ipfs' do
   url "https://dist.ipfs.io/go-ipfs/v#{version}/go-ipfs_v#{version}_linux-amd64.tar.gz"
   checksum node['ipfs']['checksum']
   has_binaries ['ipfs']
+  notifies :restart, 'service[ipfs]', :delayed
 end
 
 execute 'ipfs init --empty-repo' do
