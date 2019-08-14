@@ -20,7 +20,6 @@ services: docker
 env:
   matrix:
   - INSTANCE=default-debian-9
-  - INSTANCE=default-ubuntu-1604
   - INSTANCE=default-ubuntu-1804
 
 before_script:
