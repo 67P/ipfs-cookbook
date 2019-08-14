@@ -9,6 +9,9 @@ platforms:
   - name: ubuntu-18.04
   - name: debian-9
 
+verifier:
+  chef_license: accept
+
 suites:
   - name: default
     run_list:
