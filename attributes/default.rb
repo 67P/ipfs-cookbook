@@ -1,5 +1,5 @@
-node.default['ipfs']['version'] = '0.4.21'
-node.default['ipfs']['checksum'] = 'a7ec5ddc4d52f818cbf3853a80f7ec17f9fde9128f039485dbe1889cf673d562'
+node.default['ipfs']['version'] = '0.4.22'
+node.default['ipfs']['checksum'] = '43431bbef105b1c8d0679350d6f496b934d005df28c13280a67f0c88054976aa'
 
 node.default['ipfs']['ulimit'] = 64000
 node.default['ipfs']['memory_max'] = '512M'
